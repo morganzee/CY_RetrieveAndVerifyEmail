@@ -1,0 +1,21 @@
+const { defineConfig } = require("cypress");
+
+module.exports = defineConfig({
+  e2e: {
+    setupNodeEvents(on, config) {
+      watchForFilechanges:false
+    },
+
+    baseUrl:"https://example.mailosaur.com/",
+    testIsolation: false, // This help to run other it block not just the first it block
+    
+    env:{
+        MAILOSAUR_API_KEY:"RY8iAdvBHll56M8XOMIpNRhKLy9KUKTa" //server API key
+      },
+
+    defaultCommandTimeout:50000,
+    pageLoadTimeout:50000
+    
+  },
+});
+ 
