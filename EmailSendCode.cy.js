@@ -1,4 +1,4 @@
-import Mailosaur from 'mailosaur';
+//import Mailosaur from 'mailosaur';
 const serverID = "2d5vmkwc"
 const emailDomain = "@2d5vmkwc.mailosaur.net"
 let emailAddress
